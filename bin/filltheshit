@@ -1,0 +1,26 @@
+#!/usr/bin/env node
+
+const path = require('path')
+const commander = require('commander')
+
+const pkg = require('../package.json')
+const filename = path.basename(__filename)
+
+commander
+  .version(pkg.version)
+  .option('-u, --username <username>', 'Email or Username')
+  .option('-p, --password <password>', 'Password')
+  .option('-d, --date <date>', 'Date in YYYY-MM-DD format')
+  .option('-i, --index <index>', 'Index of the field')
+  .option('-h, --hours <hours>', 'Hours to be filled in to the hour field')
+  .option('-n, --note <note>', 'Note to be filled in to the note field')
+  .parse(process.argv)
+
+if (!commander['username'] || !commander['password'] || !commander['date'] || !commander['index'] || !commander['hours'] || !commander['note']) {
+  console.error(`Wrong usage. See ${filename} --help for help`)
+  process.exit(1)
+}
+
+const fillTheShit = require('../index.js')
+
+fillTheShit(commander['username'], commander['password'], commander['date'], commander['index'], commander['hours'], commander['note'])

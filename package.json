@@ -1,0 +1,20 @@
+{
+  "name": "filltheshit",
+  "version": "1.0.0",
+  "description": "Fill The Tedious Timesheet Data",
+  "bin": "bin/filltheshit",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard"
+  },
+  "author": "Harsh Vakharia <harshjv@gmail.com> (https://harshjv.github.io)",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "node-horseman": "^3.2.0",
+    "phantomjs-prebuilt": "^2.1.14"
+  },
+  "devDependencies": {
+    "standard": "^8.6.0"
+  }
+}

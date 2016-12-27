@@ -8,6 +8,10 @@
     "test": "standard"
   },
   "author": "Harsh Vakharia <harshjv@gmail.com> (https://harshjv.github.io)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/harshjv/fill-the-shit.git"
+  },
   "license": "MIT",
   "dependencies": {
     "commander": "^2.9.0",

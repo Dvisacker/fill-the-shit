@@ -7,19 +7,19 @@ This program fills the timesheet data on behalf of employees automatically, so t
 
 ## Installation
 
-    npm install -g filltheshit
+    npm install -g fill-the-shit
 
 
 ## API
 
-    const fillTheShit = require('filltheshit')
+    const fillTheShit = require('fill-the-shit')
 
-    filltheshit('username', 'password', 'YYYY-MM-DD', 10, 7, 'comment/note')
+    fillTheShit('username', 'password', 'YYYY-MM-DD', 10, 7, 'comment/note')
 
 
 ## Command-line usage
 
-    Usage: filltheshit [options]
+    Usage: fill-the-shit [options]
 
     Options:
 
@@ -38,7 +38,7 @@ This program fills the timesheet data on behalf of employees automatically, so t
 Use cron job and don't forget to exclude weekends. ;)
 
 
-    0 18 * * 1,2,3,4,5 <your_username> filltheshit -u username -p password -d "2016-12-12" -i 10 -h 7 -n "comment"
+    0 18 * * 1,2,3,4,5 <your_username> fill-the-shit -u username -p password -d "2016-12-12" -i 10 -h 7 -n "comment"
 
 
 ## Test

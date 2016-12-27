@@ -1,8 +1,8 @@
 {
-  "name": "filltheshit",
+  "name": "fill-the-shit",
   "version": "1.0.0",
   "description": "Fill The Tedious Timesheet Data",
-  "bin": "bin/filltheshit",
+  "bin": "bin/fill-the-shit",
   "main": "index.js",
   "scripts": {
     "test": "standard"
